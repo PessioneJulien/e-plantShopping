@@ -251,6 +251,7 @@ function ProductList() {
 
     const handleContinueShopping = (e) => {
         e.preventDefault();
+        setShowPlants(true);
         setShowCart(false);
     };
     const handleAddToCart = (plant) => {
@@ -312,7 +313,7 @@ function ProductList() {
                     ))}
                 </div>
             ) : (
-                <CartItem onContinueShopping={handleContinueShopping} handleDeleteToCart={handleDeleteToCart} />
+                <CartItem onContinueShopping={handlePlantsClick} handleDeleteToCart={handleDeleteToCart} />
             )}
         </div>
     );
