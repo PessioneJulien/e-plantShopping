@@ -20,7 +20,7 @@ const CartItem = ({ onContinueShopping, handleDeleteToCart }) => {
 
 
   const handleCheckoutShopping = (e) => {
-    alert('Functionality to be added for future reference');
+    alert('Comming soon');
   };
 
   const handleIncrement = (item) => {
